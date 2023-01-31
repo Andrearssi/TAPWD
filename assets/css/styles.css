@@ -1,0 +1,47 @@
+.navwhite{
+  background: var(--bs-white);
+  border-bottom-style: solid;
+  border-bottom-color: var(--bs-black);
+}
+
+.inner {
+  overflow: hidden;
+}
+
+.inner img {
+  transition: all 1.0s ease;
+}
+
+.inner img:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 300px) {
+  #borobudur, #prambanan, #ratuboko {
+    flex: 0 0 auto;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  #borobudur, #prambanan, #ratuboko {
+    flex: 1 0 0%;
+  }
+}
+
+@media (min-width:1200px) {
+  .py-xl-5 {
+    padding-top: 2rem!important;
+    padding-bottom: 2rem!important;
+  }
+}
+
+.button {
+  opacity: 0;
+}
+
+img:hover + .button, .button:hover {
+  opacity: 1;
+}
